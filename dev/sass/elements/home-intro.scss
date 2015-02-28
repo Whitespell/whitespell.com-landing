@@ -1,0 +1,17 @@
+.home-intro {
+	margin-bottom: $margin-l;
+	padding-top: $margin-l;
+
+	.content {
+		margin-top: $margin-xl;
+	}
+
+	.character {
+		width: 100%;
+		text-align: center;
+
+		img {
+			max-width: 300px;
+		}
+	}
+}

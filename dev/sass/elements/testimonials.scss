@@ -1,0 +1,28 @@
+.testimonials {
+
+  .container {
+    width: 600px !important;
+  }
+
+  p {
+    font-size: 1.4em;
+  }
+
+  cite {
+    .photo {
+      width: 40px;
+      height: 40px;
+      overflow: hidden;
+
+      position: relative;
+      top: 3px;
+
+      @include border($color: $accent-dark, $width: $border-width-alt);
+
+      float: left;
+      margin-right: $margin-s;
+      border-radius: 100%;
+    }
+  }
+
+}

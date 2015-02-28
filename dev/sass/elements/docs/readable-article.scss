@@ -1,0 +1,75 @@
+.readable-article {
+
+	> .container {
+		max-width: 700px;
+	}
+
+	p.intro {
+		font-size: 1.2em;
+		line-height: 1.7em;
+	}
+
+	h5, h6 {
+		color: $accent-alt;
+	}
+
+	blockquote {
+		font-size: 1.2em;
+		line-height: 1.7em;
+		margin-bottom: $margin-m;
+
+		padding-left: $margin-l;
+
+		cite {
+			font-size: $size-m;
+			display: block;
+			margin-top: $margin-xs;
+		}
+	}
+
+	.didyouknow {
+		width: 100%;
+		margin-bottom: $margin-m;
+
+		color: $white;
+		background-color: $accent-alt;
+		padding: $padding-l;
+		padding-left: 60px;
+		border-radius: $border-radius;
+
+		@include border($color: $accent-alt-dark);
+
+		.ss-icon {
+			margin-left: -25px;
+		}
+	}
+
+	footer {
+		margin-top: $margin-l;
+		padding-top: $margin-l;
+		@include border(top);
+
+		article {
+			margin-bottom: $margin-l;
+
+			h5 {
+				color: $base-color;
+				@include transition(color);
+
+				&:hover {
+					color: $accent;
+				}
+			}
+
+			p {
+				font-size: $size-s;
+				margin: 0;
+			}
+		}
+
+		.row:last-child article {
+			margin-bottom: 0;
+		}
+	}
+
+}

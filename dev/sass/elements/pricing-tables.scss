@@ -1,0 +1,133 @@
+.pricing-item {
+	width: 100%;
+	min-height: 450px;
+
+	position: relative;
+	overflow: visible;
+
+	//margin-right: $margin-s !important;
+	//margin-left: 0 !important;
+	margin-bottom: $margin-m;
+
+	float: left;
+	text-align: center;
+
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&.featured {
+		//font-size: $size-l;
+		border-color: $accent-alt;
+
+		h3 {
+			color: $accent-alt;
+		}
+
+		header {
+			background-color: $accent-alt;
+			@include reset-text-color();
+		}
+
+		.price {
+			background-color: $accent-alt-hover;
+		}
+	}
+
+	header, .content {
+		padding: $padding-l;
+		//overflow: hidden;
+	}
+
+	header {
+		border-top-left-radius: $border-radius;
+		border-top-right-radius: $border-radius;
+		background-color: $accent;
+		@include reset-text-color();
+	}
+
+	.content {
+		@include border(right);
+		@include border(left);
+	}
+
+	h3,h4 {
+		margin: 0;
+	}
+
+	.price {
+		padding: 10px 0;
+		color: $white;
+		background: $accent-hover;
+	}
+
+	ul {
+		overflow: visible;
+		text-align: left;
+		padding-left: 0;
+		margin-bottom: 0;
+
+		a {
+			color: $base-color;
+			cursor: pointer;
+			@include border(bottom);
+
+			position: relative;
+
+			&:hover {
+				&:before,&:after {
+					display: block;
+				}
+			}
+
+			&:before,&:after {
+				position: absolute;
+				z-index: 1;
+				display: none;
+			}
+
+			&:before {
+				width: 217px;
+
+				cursor: auto;
+				content: attr(data-tooltip);
+
+				color: $white;
+				background-color: rgba($base-color, .9);
+				border-radius: $border-radius;
+
+				padding: $padding-m;
+
+				left: -$margin-m;
+				bottom: $margin-m + 9px;
+			}
+
+			&:after {
+				content: '';
+				width: 0;
+				height: 0;
+
+				margin-right: -7px;
+				bottom: $margin-m + 2px;
+				right: 50%;
+
+				@include border(left, transparent, 7px);
+				@include border(right, transparent, 7px);
+				@include border(top, rgba($base-color, .9), 7px);
+			}
+		}
+
+		li:before {
+			display: none;
+		}
+	}
+
+	a.btn {
+		width: 100%;
+
+		border-top-right-radius: 0;
+		border-top-left-radius: 0;
+	}
+
+}

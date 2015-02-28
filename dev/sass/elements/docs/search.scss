@@ -1,0 +1,47 @@
+section.search {
+
+	header {
+		input {
+			margin-bottom: $margin-l;
+		}
+	}
+
+	.results {
+
+		a {
+			display: block;
+			border-bottom: 0;
+			margin-bottom: $margin-l;
+			overflow: hidden;
+
+			h5 {
+				color: $accent-alt;
+			}
+
+			p {
+				color: $base-color;
+			}
+
+			h5, p {
+				margin-bottom: $margin-s;
+			}
+
+			small {
+				font-size: $size-s;
+				color: $grey-dark;
+
+				.devicons, .ss-icon {
+					margin-right: $margin-s;
+					position: relative;
+					top: 1px;
+				}
+
+				.ss-icon {
+					font-size: 0.85em;
+				}
+			}
+		}
+
+	}
+
+}

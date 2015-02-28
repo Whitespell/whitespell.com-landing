@@ -1,0 +1,16 @@
+body.docs {
+	@import "sidebar";
+
+    #docs-sidebar-trigger {
+        display: none;
+    }
+
+	.content {
+		@import "language-picker";
+		@import "list-boxes";
+		@import "search";
+		@import "readable-article";
+	}
+
+	@import "media";
+}

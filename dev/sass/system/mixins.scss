@@ -1,0 +1,96 @@
+//Border
+@mixin border($side:false, $color:$grey, $width:$border-width){
+  @if $side {
+    border-#{$side}: $border-style $width $color;
+  } @else {
+    border: $border-style $width $color;
+  }
+}
+
+//Reset text color
+@mixin reset-text-color($color:$white){
+	color: $color;
+
+	h1,h2,h3,h4,h5,h6,a,
+	ul.usp li .ss-icon {
+		color: $color;
+	}
+
+	ul.usp li .ss-icon {
+		border-color: $color;
+	}
+}
+
+//Prefix property
+@mixin prefix($property, $value){
+	-webkit-#{$property}: $value;
+	-moz-#{$property}: $value;
+	-o-#{$property}: $value;
+	-ms-#{$property}: $value;
+	#{$property}: $value;
+}
+
+//Transition
+@mixin transition($property, $duration:$transition-duration, $timing:$transition-timing,  $delay:0s){
+	@include prefix(transition, $property $duration $timing $delay);
+}
+
+//Animations
+@mixin animation($name, $seconds, $delay:0s){
+	@include prefix(animation, $name $seconds infinite alternate $delay);
+}
+
+@mixin keyframes($name){
+	@-webkit-keyframes $name {
+	  @content;
+	}
+	@-moz-keyframes $name {
+	  @content;
+	}
+	@-o-keyframes $name {
+	  @content;
+	}
+	@keyframes $name {
+	  @content;
+	}
+}
+
+//Transforms
+@mixin transform($value){
+	@include prefix(transform, $value);
+}
+
+//Media queries
+@mixin media($min-width:false, $max-width:false, $type: all){
+	@if $min-width and $max-width {
+
+		@media #{$type} and (min-width: $min-width) and (max-width: $max-width) {
+			@content;
+		}
+
+	} @else if not $min-width and $max-width {
+
+		@media #{$type} and (max-width: $max-width) {
+			@content;
+		}
+
+	} @else if $min-width and not $max-width {
+
+		@media #{$type} and (min-width: $min-width) {
+			@content;
+		}
+
+	}
+}
+
+@mixin sidebar() {
+	width: 200px;
+
+	position: fixed;
+	top: 0;
+	bottom: 0;
+
+	margin-top: 0;
+
+	background-color: $base-color-dark;
+}

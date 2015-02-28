@@ -1,0 +1,67 @@
+$main-container-width: 1024px;
+
+
+//COLORS
+$base-color: #484848;
+$base-color-dark: darken($base-color, 10%);
+$white: #f5f5f5;
+
+$accent: darken(#3796cf, 5%);
+$accent-dark: darken($accent, 10%);
+$accent-hover: darken($accent, 5%);
+
+$accent-alt: #4648ae;
+$accent-alt-dark: darken($accent-alt, 20%);
+$accent-alt-hover: darken($accent-alt, 5%);
+
+$grey: #d9d9d9;
+$grey-dark: darken($grey, 30%);
+
+//social
+$fb: #3b5998;
+$twitter: #5ea9dd;
+$github: #333333;
+$googleplus: #dd4b39;
+
+
+//TYPOGRAPHY
+$main-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+$code-family: Consolas, Monaco, 'Andale Mono', monospace;
+
+$main-weight: 100;
+$bold-weight: 500;
+
+$line-height: 1.5em;
+$heading-line-height: 1.3em;
+
+$size-s: 0.9em;
+$size-m: 16px;
+
+
+//SPACING
+$margin-xs: 5px;
+$margin-s: 10px;
+$margin-m: 20px;
+$margin-l: 40px;
+//$margin-xl-mobile: 60px;
+$margin-xl: 80px;
+
+$padding-m: $margin-s $margin-s+5;
+$padding-l: $margin-m+10px $margin-l;
+
+
+//BORDERS
+$border-style: solid;
+$border-width: 1px;
+$border-width-alt: 2px;
+$border-radius: 3px;
+
+
+//ANIMATIONS
+$transition-duration: .3s;
+$transition-duration-alt: .1s;
+$transition-timing: ease;
+
+
+$header-height-desktop: 87px;
+//$sidebar-width: 200px;

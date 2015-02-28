@@ -1,0 +1,30 @@
+.list-boxes {
+
+	article {
+		@include border();
+		border-radius: $border-radius;
+		margin-bottom: $margin-m;
+
+		header {
+			@include border(bottom);
+
+			padding: $padding-m;
+		}
+
+		.content {
+			padding: $padding-m;
+
+			ul {
+				margin-top: 0;
+				margin-bottom: 0;
+
+				li {
+					margin-bottom: $margin-s;
+				}
+			}
+
+		}
+
+	}
+
+}

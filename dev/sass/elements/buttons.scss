@@ -1,0 +1,45 @@
+.button-set {
+	font-size: 1.2em;
+	span {
+		margin-right: $margin-m;
+		margin-left: $margin-m;
+		font-style: italic;
+	}
+}
+
+a.btn,
+input[type='submit'] {
+	font-size: $size-s;
+	font-weight: $main-weight;
+
+	display: inline-block;
+
+	color: $white;
+	background-color: $accent;
+	border: none;
+	@include border(false, $accent-dark);
+	border-radius: $border-radius;
+
+	padding: $padding-m;
+
+	cursor: pointer;
+
+	@include transition(background-color, $transition-duration-alt);
+
+	&.alt {
+		background: $accent-alt;
+		border-color: $accent-alt-dark;
+
+		&:hover {
+			background: $accent-alt-hover;
+		}
+	}
+
+	&:hover {
+		background-color: $accent-hover;
+	}
+
+	&.big {
+		font-size: $size-m;
+	}
+}

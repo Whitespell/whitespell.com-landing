@@ -1,0 +1,99 @@
+#header-bg {
+	width: 100%;
+	height: $header-height-desktop;
+	overflow: hidden;
+}
+
+header#header {
+	width: 100%;
+	padding: $margin-m 0;
+
+	background-color: $accent;
+	color: $white;
+	//@include border(bottom, $accent-dark, $border-width-alt);
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+
+	h1 {
+		width: 70px;
+		margin: 0;
+		float: left;
+		line-height: 0;
+
+		img {
+			margin: 0;
+		}
+	}
+
+	nav {
+		margin-top: 4px;
+		float: right;
+
+		ul {
+			margin: 0;
+
+			li {
+				margin-right: $margin-l;
+
+				@include border(bottom, $accent);
+				padding-bottom: 5px;
+
+				&.login-btns {
+					margin-right: 0;
+				}
+
+				&.active {
+					font-weight: $bold-weight;
+					color: $accent;
+				}
+			}
+
+			a {
+				color: $white;
+				border: none;
+
+				&.btn {
+					@include border($color: $accent-dark);
+					margin-left: $margin-s;
+				}
+
+				&.is-active li {
+					border-color: $grey;
+				}
+
+				&:last-child li {
+					margin: 0;
+				}
+			}
+		}
+	}
+
+	a.ss-icon {
+		padding: $padding-m;
+		padding-top: 28px;
+		padding-bottom: $margin-m;
+
+		line-height: $line-height !important;
+		color: $white;
+
+		cursor: pointer;
+		display: none;
+
+		float: right;
+		margin-top: 2px;
+		border: none;
+	}
+}
+
+footer#footer {
+	font-size: $size-s;
+	padding-bottom: $margin-m;
+	padding-top: $margin-m;
+	@include border(top);
+	color: $grey-dark;
+	text-align: center;
+}

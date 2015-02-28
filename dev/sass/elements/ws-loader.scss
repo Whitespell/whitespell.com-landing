@@ -1,0 +1,44 @@
+.ws-loader {
+
+	width: 100px;
+	margin: 0 auto;
+
+	svg {
+		width: 100%;
+		height: 100%;
+	}
+
+	.right-wing {
+		@include transform( translate(-180px,0) );
+		@include animation(ws-wings, 1.5s);
+	}
+
+	.left-wing {
+		@include transform( translate(180px,0) );
+		@include animation(ws-wings, 1.5s);
+	}
+
+	.letter-w,.letter-s {
+		opacity: 0;
+		@include animation(ws-fade-in, 1.5s);
+	}
+
+}
+
+@include keyframes(ws-wings) {
+  33% {//in pos after .5s
+	@include transform( translate(0,0) );
+  }
+  100% { //wait 1s
+	@include transform( translate(0,0) );
+  }
+}
+
+@include keyframes(ws-fade-in) {
+  33% {//.5s delay
+	opacity: 0;
+  }
+  100% {//1s for fade-in
+	opacity: 1;
+  }
+}

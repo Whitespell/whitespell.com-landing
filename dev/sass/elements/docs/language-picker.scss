@@ -1,0 +1,38 @@
+.language-picker {
+	h4 {
+		margin-bottom: $margin-l;
+	}
+
+	a {
+		display: block;
+		float: left;
+		color: $base-color;
+		text-align: center;
+		border: none;
+
+		@include transition(color);
+
+		div {
+			font-size: 5em;
+			line-height: 1em;
+
+			height: 120px;
+			line-height: 120px;
+
+			&.ss-icon {
+				font-size: 4em;
+				line-height: 150px;
+			}
+		}
+
+		span {
+			display: block;
+			margin-top: $margin-m;
+			font-size: $size-s;
+		}
+
+		&:hover {
+			color: $accent;
+		}
+	}
+}

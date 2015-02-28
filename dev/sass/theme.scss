@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+	line-height: $line-height;
+	-webkit-tap-highlight-color: transparent;
+}
+
+body {
+	font: $size-m $main-family;
+	font-weight: $main-weight;
+	color: $base-color;
+	background: $white;
+	position: relative;
+}
+
+body, header#header {
+	@include transition(margin-left);
+}
+
+.container {
+	width: $main-container-width;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+img, iframe {
+	width: 100%;
+}
+
+.no-clear {
+	margin-bottom: 0 !important;
+}
+
+span.ss-icon, span.devicons {
+	display: inline-block;
+	margin-right: $margin-s;
+
+	position: relative;
+	top: 3px;
+}
+
+span.devicons {
+	font-size: 1.1em;
+	top: 2px;
+}

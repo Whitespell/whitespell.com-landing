@@ -1,0 +1,35 @@
+.column {
+	width: 100%;
+	overflow: hidden;
+
+	&.half {
+		@include column(6);
+	}
+
+	&.one-third {
+		@include column(4);
+	}
+
+	&.one-fourth {
+		@include column(3);
+	}
+
+	&.three-fourth {
+		@include column(9);
+	}
+
+	&.two-third {
+		@include column(8);
+	}
+
+	&.clear-l {
+		margin-left: 0;
+	}
+	&.clear-r {
+		margin-right: 0;
+	}
+
+	&.centered {
+		text-align: center;
+	}
+}
