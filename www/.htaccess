@@ -1,8 +1,0 @@
-#ErrorDocument
-
-ErrorDocument 404 /404.html
-
-#Rewrite URL
-
-RewriteEngine On
-RewriteRule ^([a-z\-]+)$ $1.html

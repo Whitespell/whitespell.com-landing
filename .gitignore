@@ -2,3 +2,5 @@
 .sass_cache/
 node_modules/
 dev/.sass-cache/
+.idea/
+.sass-cache/
