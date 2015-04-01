@@ -1,0 +1,13 @@
+.feature article:nth-child(1) {
+  margin-left: 0; }
+.feature article:nth-child(2) {
+  margin-right: 0;
+  float: right; }
+.feature.inverted article:nth-child(1) {
+  float: right;
+  margin-right: 0; }
+.feature.inverted article:nth-child(2) {
+  float: left;
+  margin-left: 0; }
+
+/*# sourceMappingURL=features.css.map */
