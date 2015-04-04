@@ -5,12 +5,20 @@ block pageVars
   - var pageDescription = "Whitespell"
 
 block pageContent
+  a(href="#")
+    .notification
+      .container
+        span.ss-icon.ss-standard lightbulb
+        b Would you like to work with us? We're looking for new talent to join our team.
+        span.arrow.ss-icon.ss-standard navigateright
+
   section.section.home-intro
     .container
       article.column.half.content.clear-l
-        h2 Welcome to Whitespell
-        h3.h4.altbuild We fund, build, and support impactful and powerful technology that empowers people just like you
+        h2 Whitespell
+        h3.h4.alt Impactful and powerful technology
         p.
+          We fund, build, and support impactful and powerful technology that empowers people just like you.
           Do you have ideas, opportunities, or wish to join our team?
         a.cta(href="#contact") Get in touch with us
 
@@ -22,85 +30,78 @@ block pageContent
     .container
       article.column.half.clear-l
         h3 Who are we?
-        h4.h5 We're a team of entrepreneurs who love a challenge
+        h4.h5 A team of entrepreneurs who love a challenge
         p.
           Our team has been incredibly fortunate to work with developers all over the world on projects ranging from online games in The Netherlands to health tech in Africa.
 
         a(href="#") Get in touch with us
       article.column.half.clear-r
         div(style="text-align: center; margin-top: 40px;")
-          //img(style="max-width: 300px; " src="assets/img/partners.png")
+          img(style="max-width: 300px; " src="assets/img/partners.png")
 
   section.section.accent(style="background-image: url('assets/img/doctor-buendia-app.jpg');")
     .container
+      h3 Featured Project
+      h4.h5 Project Buendia
       article.column.half.clear-l
-        h3 Featured Project
-        h4.h5 Project Buendia
-
         p.
           Whitespell founded a project to improve efficiency in Ebola treatment centers. The project has been an amazing experience for us.
           Thanks to the entire team the solution is now deployed in West Africa and helping doctors treat patients in Ebola treatment centers.
 
-        a(href="#") More about project Buendia
+        a(href="http://www.linkedin.com/pulse/fighting-ebola-building-app-msf-google-pim-de-witte" alt="Article: Fighting Ebola: Building an app with MSF & Google" target="_blank") More about project Buendia
 
-  .container
-    section.section
+      article.column.half.clear-r
+        ul.no-bullets.no-clear.xs-push-top
+          +media-list__item('http://www.bbc.com/news/health-31970731', 'BBC News', 'bbc')
+          +media-list__item('http://www.wired.com/2015/03/google-builds-new-tablet-fight-ebola/', 'Wired', 'wired')
+          +media-list__item('http://www.cityam.com/212100/how-google-ended-creating-ebola-proof-tablet', 'City A.M.', 'city-am')
+          +media-list__item('https://fd.nl/economie-politiek/1097718/artsen-zonder-grenzen-vroeg-me-na-te-denken-over-bestrijding-ebola', 'Financieel Dagblad', 'fd')
+
+  section.section
+    .container
       h3 Latest posts
       h4.h5.alt.no-clear Read about what keeps us busy
 
-      section.column.overview-list
-        article.column.half.clear-l
-          a(href="http://pimdewitte.me/2014/01/29/my-experience-with-status-ph-the-start-of-an-exciting-week/")
-            h5.title Hacking For Social Good: What’s In It?
-          .meta
-            .inline-photo
-              img(src="/assets/img/pim-thumbnail.jpg")
-            p
-              | Posted by 
-              a(href="#") Pim de Witte
-              |  in 
-              a(href="#") Technology
-
+      .column.overview-list
+        +overview-list__article({
+          url: 'http://pimdewitte.me/2014/01/29/my-experience-with-status-ph-the-start-of-an-exciting-week/',
+          title: 'Hacking For Social Good: What’s In It?',
+          author: 'Pim de Witte',
+          authorUrl: 'http://pimdewitte.com',
+          imgSrc: 'pdwitte.jpeg'
+        })
+        +overview-list__article({
+          url: 'https://www.linkedin.com/pulse/fighting-ebola-building-app-msf-google-pim-de-witte',
+          title: 'Fighting Ebola: Building an app with MSF & Google',
+          author: 'Pim de Witte',
+          authorUrl: 'http://pimdewitte.com',
+          imgSrc: 'pdwitte.jpeg'
+        })
 
       //a(href="#").cta Read all our articles on Medium
 
-  section.section.accent.testimonials
+  section.section.accent
     .container
-      p.
-        I can't say enough about their talent, customer service, and commitment to excellence.
-      cite
-        div.photo
-          img(src="/assets/img/derek-img.jpg")
-        | Derek Allen
-        br
-        small
-          em
-              a(href="http://c2church.org")
-                   span Lead Pastor at C2 Church
-    .container
-      p.
-        Ganesh's quote
-      cite
-        div.photo
-          img(src="/assets/img/pim-thumbnail.jpg")
-        | Ganesh Shankar
-        br
-        small
-          em
-              a(href="http://c2church.org")
-                   span Product Manager at Google
-    .container
-      p.
-        Whitespell is awesome man..
-      cite
-        div.photo
-          img(src="/assets/img/pim-thumbnail.jpg")
-        | Derek Allen
-        br
-        small
-          em
-              a(href="http://c2church.org")
-                   span Ivan Gayton, Doctors without Borders
+
+      .column.half.clear-l
+        +testimonial({
+          content: "I can't say enough about their talent, customer service, and commitment to excellence.",
+          imgSrc: "pdwitte.jpeg",
+          name: "Ganesh Sinclair",
+          org: "Google",
+          profession: "Product Manager",
+          orgUrl: "http://c2church.org"
+        })
+
+      .column.half.clear-r
+        +testimonial({
+          content: "I can't say enough about their talent, customer service, and commitment to excellence.",
+          imgSrc: "pdwitte.jpeg",
+          name: "Ivan Gayton",
+          org: "MSF",
+          profession: "Head of Mission",
+          orgUrl: "http://c2church.org"
+        })
 
   section.section
     .container
@@ -111,23 +112,23 @@ block pageContent
         p
           | Everything you see around you was initially just an idea.
           | We're open to hear your thoughts and see how we can help.
-        a(href="#").no-border
+        a(href="tel:+17862019489" title="Call us").no-border
           h6.alt.inline.no-clear +1 (786) 201 9489
-        a(href="#").no-border
+        a(href="mailto:info@whitespell.com" title="Email us").no-border
           h6.alt.inline.no-clear info@whitespell.com
-        p
 
       article.column.half.clear-r
-        ul.social.no-clear
-          li
-            a(href="https://www.facebook.com/wearewhitespell")
-              span.ss-icon.ss-social-circle.fb facebook
-              | Facebook
-          li
-            a(href="https://twitter.com/_whitespell")
-              span.ss-icon.ss-social-circle.twitter twitter
-              | Twitter
-          li
-            a(href="https://github.com/whitespell")
-              span.ss-icon.ss-social-circle.github octocat
-              | Github
+        +social-list
+
+  section.section
+      .container
+        h4 Office Address
+        article.column.one-third.clear-l
+          h6.alt United States
+          ul.no-bullets
+            li Whitespell LLC
+            li 990 Biscayne Blvd. Office 503
+            li Miami, FL 33132
+            li +1 (305) 929-8688
+        article.column.two-third.clear-r
+          iframe.no-clear(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3592.618218595252!2d-80.18977800000003!3d25.783171000000017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b6a0faa6d11f%3A0x550785ebdd7e340f!2sMiamiShared!5e0!3m2!1snl!2snl!4v1419087308198", width="100%", height="250", frameborder="0", style="border:0")

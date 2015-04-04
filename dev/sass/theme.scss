@@ -24,7 +24,7 @@ body, header#header {
 	overflow: hidden;
 }
 
-img, iframe {
+iframe {
 	width: 100%;
 }
 
@@ -43,4 +43,28 @@ span.ss-icon, span.devicons {
 span.devicons {
 	font-size: 1.1em;
 	top: 2px;
+}
+
+.notification {
+	width: 100%;
+	padding: $margin-m 0;
+	background: $accent;
+	color: $white;
+
+	@include transition(background-color);
+
+	.arrow {
+		font-size: $size-s;
+		color: $white;
+		border: none;
+		position: relative;
+		top: 4px;
+		margin-left: $margin-m;
+		float: right;
+		display: inline-block;
+	}
+
+	&:hover {
+		background-color: $accent-hover;
+	}
 }

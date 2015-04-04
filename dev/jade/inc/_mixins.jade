@@ -1,0 +1,47 @@
+mixin testimonial(options)
+    .testimonial(class="#{options.extraClass}")
+      p.
+        #{options.content}
+      a(href="#{options.orgUrl}" title="#{options.org}").no-border
+        cite
+          div.photo
+            img(src="/assets/img/#{options.imgSrc}" alt="#{options.name}")
+          | #{options.name}
+          br
+          small
+            em
+              span #{options.profession} at #{options.org}
+
+
+mixin overview-list__article(options)
+  article.column.half.clear-l
+    a(href="#{options.url}" title="#{options.title}")
+      h5.title #{options.title}
+    .meta
+      .inline-photo
+        img(src="/assets/img/#{options.imgSrc}" alt="#{options.author}")
+      p
+        | Posted by 
+        a(href="#{options.authorUrl}") #{options.author}
+
+
+mixin media-list__item(url, name, imgName)
+  li
+    a.no-border(href="#{url}" alt="Project Buendia on #{name}" target="_blank")
+      img(src="assets/img/media/#{imgName}.png" style="max-height: 25px")
+
+
+mixin social-list(extraClass)
+  ul.social(class="#{extraClass}")
+    li
+      a(href="https://www.facebook.com/whitespell")
+        span.ss-icon.ss-social-circle.fb facebook
+        | Facebook
+    li
+      a(href="https://twitter.com/_whitespell")
+        span.ss-icon.ss-social-circle.twitter twitter
+        | Twitter
+    li
+      a(href="https://github.com/whitespell")
+        span.ss-icon.ss-social-circle.github octocat
+        | Github

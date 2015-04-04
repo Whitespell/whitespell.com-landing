@@ -60,7 +60,7 @@ a {
 	@include transition(all);
 
 	&.no-border {
-		border: none;
+		border: none !important;
 	}
 
 	&:hover, &.cta {
@@ -208,6 +208,9 @@ ul {
 
 	&.no-bullets {
 		padding-left: 0;
+		li img {
+			margin-bottom: 0;
+		}
 		li:before {
 			display: none;
 		}

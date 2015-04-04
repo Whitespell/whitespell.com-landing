@@ -49,6 +49,14 @@
 //MOBILE
 @include media($max-width: 768px){
 
+	.xs-push-top {
+		margin-top: $margin-m;
+	}
+
+	.xs-no-clear {
+		margin-bottom: 0 !important;
+	}
+
 	//CONTAINER
 	.container, .testimonials .container {
 		width: 90% !important;
@@ -258,6 +266,13 @@
 				float: none;
 			}
 		}
+	}
+
+	.testimonial {
+		margin-bottom: $margin-l;
+	}
+	.column:last-child .testimonial {
+		margin-bottom: 0;
 	}
 
 }

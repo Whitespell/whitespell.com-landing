@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAwCA,IAAK;EACJ,KAAK,EAAE,IAAI;EAlBX,KAAK,EAAC,CAAC;EAEP,uBACQ;IACJ,OAAO,EAAC,EAAE;IACV,OAAO,EAAC,KAAK;EAEjB,UAAQ;IACJ,KAAK,EAAC,IAAI",
-"sources": ["grid.scss"],
-"names": [],
-"file": "grid.css"
-}
