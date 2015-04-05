@@ -19,18 +19,19 @@ header#header {
 	z-index: 2;
 
 	h1 {
-		width: 70px;
+		width: 60px;
 		margin: 0;
 		float: left;
 		line-height: 0;
 
 		img {
+			width: 100%;
 			margin: 0;
 		}
 	}
 
 	nav {
-		margin-top: 4px;
+		margin-top: 8px;
 		float: right;
 
 		ul {

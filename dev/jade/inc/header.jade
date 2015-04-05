@@ -1,0 +1,17 @@
+div#header-bg
+header#header
+  .container
+    a.ss-icon.ss-standard#docs-sidebar-trigger rows
+    a(href="/")
+      h1#logo
+        img(src="/assets/img/whitespell-logo-white.svg", alt="Whitespell Logo")
+    nav
+      ul.inline
+        each name, href in {"":"Home", "about.html":"About", "reading.html":"Reading", "careers.html":"Careers", "contact.html":"Contact"}
+          if pageTitle === name || (pageTitle === "" && href === "")
+            a(href="/#{href}").is-active
+              li= name
+          else
+            a(href="/#{href}")
+              li= name
+    a.ss-icon.ss-standard#sidebar-trigger rows

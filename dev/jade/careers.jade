@@ -1,48 +1,42 @@
 extends ./inc/template
 
 block pageVars
-  - var pageTitle = "Features"
-  - var pageDescription = "Worlds first intelligent & distributed API"
+  - var pageTitle = "Careers"
+  - var pageDescription = ""
 
 block pageContent
-  a(href="/")
-    .notification
-      .container
-        span.ss-icon.ss-standard navigateleft
-        b Read all about Whitespell
 
   section.section.page-title
     .container
-      h2 Openings
+      h2 Careers
       h3.h4 Working at Whitespell
 
       article.column.half.clear-l
-        ul.usp
-          li
-            span.ss-icon.ss-standard check
-            | Work in a young team of talents
-          li
-            span.ss-icon.ss-standard check
-            | Free Gym Membership
-          li
-            span.ss-icon.ss-standard check
-            | Manage and deploy using our cloud panel or CLI
-          li
-            span.ss-icon.ss-standard check
-            | Reduces average loading time by at least 60%
-      article.column.half.clear-r
-        ul.usp
-          li
-            span.ss-icon.ss-standard check
-            | Premium plans that allow to scale as you grow
-          li
-            span.ss-icon.ss-standard check
-            | Get automatic mail updates about app data
-          li
-            span.ss-icon.ss-standard check
-            | Integrated monetization and customer support options
+        p
+          | Whitespell has collaborated with companies like Google and Doctors without Borders
+          | to build 
+          b impactful technology 
+          | around the world. We are a 
+          b for-profit company 
+          | with a 
+          b dedication to impact.
       .illustration
         span.ss-icon.ss-standard cloud
+
+  section.section
+    .container
+      h4.alt Is it you we're looking for?
+      .column.half.clear-l
+        p.
+          At Whitespell we challenge the world's most challenging problems with technology.
+          Are you looking to join a vibrant start-up in the heart of the beautiful city of Miami,
+          and do you have a passion for having a purpose through your career?
+      .column.half.clear-r
+        p.
+          If that's the case, we are looking for you.
+          Whitespell has collaborated with companies like Google and Doctors without Borders
+          to build impactful technology around the world. We are a for-profit company with a
+          dedication to impact.
 
   section.section.feature
     .container
@@ -77,13 +71,13 @@ block pageContent
   section.section.accent
     .container
       +testimonial({
-          content: "I can't say enough about their talent, customer service, and commitment to excellence.",
+          content: "Working at Whitespell means getting to realize your ideas every day while working on impactful software.",
           imgSrc: "pdwitte.jpeg",
-          name: "Ivan Gayton",
-          org: "MSF",
-          profession: "Head of Mission",
-          orgUrl: "http://c2church.org"
-        })
+          name: "Koen Vendrik",
+          org: "Whitespell",
+          profession: "Developer",
+          orgUrl: "#"
+      })
 
   section.section.feature
     .container
@@ -105,6 +99,6 @@ block pageContent
   section.section.centered
     article.column.half.clear-l
       .button-set
-        a(href="/#contact").btn Get in touch
+        a(href="/contact.html").btn Get in touch
         span or
         a(href="/").btn.alt Read all about Whitespell

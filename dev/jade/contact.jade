@@ -1,0 +1,49 @@
+extends ./inc/template
+
+block pageVars
+  - var pageTitle = "Contact"
+  - var pageDescription = "Get in touch, we're not afraid of your thoughts."
+
+block pageContent
+  section.section.page-title
+    .container
+      h2 Contact
+      h3.h4 We're not afraid of your thoughts
+      article.column.half.clear-l
+        p
+          | Do you have
+          b  questions?
+          |  Would you like to
+          b  work with us?
+          |  Or do you simply fancy a
+          b  good talk?
+      .illustration
+        span.ss-icon.ss-standard cloud
+
+  .container
+    section.section
+      h4 We're always open to a good talk
+
+      article.column.half.clear-l
+        p
+          | Everything you see around you was initially just an idea.
+          | We're open to hear your thoughts and see how we can help.
+        a(href="tel:+17862019489" title="Call us").no-border
+          h6.alt.inline.no-clear +1 (786) 201 9489
+        a(href="mailto:info@whitespell.com" title="Email us").no-border
+          h6.alt.inline.no-clear info@whitespell.com
+
+      article.column.half.clear-r
+        +social-list
+
+    section.section
+      h4 Office Address
+      article.column.one-third.clear-l
+        h6.alt United States
+        ul.no-bullets
+          li Whitespell LLC
+          li 990 Biscayne Blvd. Office 503
+          li Miami, FL 33132
+          li +1 (305) 929-8688
+      article.column.two-third.clear-r
+        iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3592.618218595252!2d-80.18977800000003!3d25.783171000000017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b6a0faa6d11f%3A0x550785ebdd7e340f!2sMiamiShared!5e0!3m2!1snl!2snl!4v1419087308198", width="100%", height="250", frameborder="0", style="border:0")
