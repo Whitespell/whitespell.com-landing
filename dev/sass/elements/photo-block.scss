@@ -1,0 +1,33 @@
+.photo-block {
+	overflow: hidden;
+	margin-bottom: $margin-l;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.photo {
+		width: 120px;
+		height: 120px;
+		
+		border-radius: 100%;
+		overflow: hidden;
+		
+		//@include border($width: 1px, $color: $accent);
+		float: left;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.content {
+		overflow: hidden;
+		padding-left: $margin-l;
+	}
+
+}
+
+.photo-block__title {
+	margin-bottom: $margin-s;
+}

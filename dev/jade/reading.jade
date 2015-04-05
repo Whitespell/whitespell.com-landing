@@ -1,0 +1,37 @@
+extends ./inc/template
+
+block pageVars
+  - var pageTitle = "Reading"
+  - var pageDescription = ""
+
+block pageContent
+
+  section.section.page-title
+    .container
+      h2 Reading
+      h3.h4 Read about what keeps us busy
+
+      article.column.half.clear-l
+        p Pieces written by the Whitespell team. Read all our articles on 
+          a(href="http://medium.com") Medium.
+      .illustration
+        span.ss-icon.ss-standard cloud
+
+  section.section
+    .container
+
+      .column.overview-list
+        +overview-list__article({
+          url: 'http://pimdewitte.me/2014/01/29/my-experience-with-status-ph-the-start-of-an-exciting-week/',
+          title: 'Hacking For Social Good: What’s In It?',
+          author: 'Pim de Witte',
+          authorUrl: 'http://pimdewitte.com',
+          imgSrc: 'pimdewitte-80.jpg'
+        })
+        +overview-list__article({
+          url: 'https://medium.com/@pim_dewitte/fighting-ebola-building-an-app-for-ebola-with-msf-google-3e8207ae5fe7',
+          title: 'Fighting Ebola: Building an app with MSF & Google',
+          author: 'Pim de Witte',
+          authorUrl: 'http://pimdewitte.com',
+          imgSrc: 'pimdewitte-80.jpg'
+        })

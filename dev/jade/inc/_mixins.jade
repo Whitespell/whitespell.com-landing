@@ -5,7 +5,7 @@ mixin testimonial(options)
       a(href="#{options.orgUrl}" title="#{options.org}").no-border
         cite
           div.photo
-            img(src="/assets/img/#{options.imgSrc}" alt="#{options.name}")
+            img(src="/assets/img/portraits/#{options.imgSrc}" alt="#{options.name}")
           | #{options.name}
           br
           small
@@ -19,7 +19,7 @@ mixin overview-list__article(options)
       h5.title #{options.title}
     .meta
       .inline-photo
-        img(src="/assets/img/#{options.imgSrc}" alt="#{options.author}")
+        img(src="/assets/img/portraits/#{options.imgSrc}" alt="#{options.author}")
       p
         | Posted by 
         a(href="#{options.authorUrl}") #{options.author}
