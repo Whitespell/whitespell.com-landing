@@ -46,6 +46,24 @@
 
 }
 
+//BELOW DESKTOP
+@include media($max-width: $main-container-width){
+
+	ul.media-list.inline {
+		margin-top: 0;
+
+		li {
+			margin-bottom: $margin-m;
+			display: inline-block;
+
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+
+}
+
 //MOBILE
 @include media($max-width: 768px){
 
@@ -275,4 +293,18 @@
 		margin-bottom: 0;
 	}
 
+
+	.photo-block {
+		.photo {
+			float: none;
+			margin-bottom: $margin-m;
+		}
+		.content {
+			padding: 0;
+		}
+	}
+
+	ul.media-list {
+		margin-top: $margin-m;
+	}
 }

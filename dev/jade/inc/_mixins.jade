@@ -25,10 +25,10 @@ mixin overview-list__article(options)
         a(href="#{options.authorUrl}") #{options.author}
 
 
-mixin media-list__item(url, name, imgName)
+mixin media-list__item(url, name, imgSrc)
   li
     a.no-border(href="#{url}" alt="Project Buendia on #{name}" target="_blank")
-      img(src="assets/img/media/#{imgName}.png" style="max-height: 25px")
+      img(src="assets/img/media/#{imgSrc}")
 
 
 mixin social-list(extraClass)
@@ -45,3 +45,14 @@ mixin social-list(extraClass)
       a(href="https://github.com/whitespell")
         span.ss-icon.ss-social-circle.github octocat
         | Github
+
+
+mixin photo-block(options)
+  .photo-block
+    .photo
+      img(src="/assets/img/portraits/#{options.imgSrc}")
+    .content
+      h4.photo-block__title.alt #{options.name}
+      h6 #{options.title}
+      p.
+        #{options.description}

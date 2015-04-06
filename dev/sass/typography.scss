@@ -48,7 +48,7 @@ h5,.h5 {
 	font-size: 1.4em;
 }
 
-h6,.h6 {
+h6,.h6, p.intro {
 	font-size: 1.2em;
 }
 
@@ -243,6 +243,14 @@ ul {
 			}
 		}
 
+	}
+
+	&.media-list {
+		margin: 0;
+		img {
+			margin-bottom: 0;
+			max-height: 25px;
+		}
 	}
 
 }

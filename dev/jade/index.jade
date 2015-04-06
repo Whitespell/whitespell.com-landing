@@ -29,11 +29,11 @@ block pageContent
           Our team has been incredibly fortunate to work with developers all over the world on projects ranging from online games in The Netherlands to health tech in Africa.
 
         a(href="#") Get in touch with us
-      article.column.half.clear-r
-        div(style="text-align: center; margin-top: 40px;")
-          img(style="max-width: 300px; " src="assets/img/partners.png")
+      //- article.column.half.clear-r
+      //-   div(style="text-align: center; margin-top: 40px;")
+      //-     img(style="max-width: 300px; " src="assets/img/partners.png")
 
-  section.section.accent(style="background-image: url('assets/img/doctor-buendia-app.jpg');")
+  section.section.accent(style="background-image: url('assets/img/doctor-buendia-app-2.jpg');")
     .container
       h3 Featured Project
       h4.h5 Project Buendia
@@ -45,84 +45,52 @@ block pageContent
         a(href="http://www.linkedin.com/pulse/fighting-ebola-building-app-msf-google-pim-de-witte" alt="Article: Fighting Ebola: Building an app with MSF & Google" target="_blank") More about project Buendia
 
       article.column.half.clear-r
-        ul.no-bullets.no-clear.xs-push-top
-          +media-list__item('http://www.bbc.com/news/health-31970731', 'BBC News', 'bbc')
-          +media-list__item('http://www.wired.com/2015/03/google-builds-new-tablet-fight-ebola/', 'Wired', 'wired')
-          +media-list__item('http://www.cityam.com/212100/how-google-ended-creating-ebola-proof-tablet', 'City A.M.', 'city-am')
-          +media-list__item('https://fd.nl/economie-politiek/1097718/artsen-zonder-grenzen-vroeg-me-na-te-denken-over-bestrijding-ebola', 'Financieel Dagblad', 'fd')
+        ul.no-bullets.no-clear.xs-push-top.media-list
+          +media-list__item('http://www.bbc.com/news/health-31970731', 'BBC News', 'bbc.png')
+          +media-list__item('http://www.theverge.com/2015/3/20/8267259/google-tablet-ebola-chlorine', 'The Verge News', 'theverge.png')
+          +media-list__item('http://www.cityam.com/212100/how-google-ended-creating-ebola-proof-tablet', 'City A.M.', 'city-am.png')
+          +media-list__item('http://magazine.good.is/articles/googles-ebola-proof-tablets', 'GOOD News', 'good.png')
 
   section.section
-    .container
-      h3 Latest posts
-      h4.h5.alt.no-clear Read about what keeps us busy
-
-      .column.overview-list
-        +overview-list__article({
-          url: 'http://pimdewitte.me/2014/01/29/my-experience-with-status-ph-the-start-of-an-exciting-week/',
-          title: 'Hacking For Social Good: What’s In It?',
-          author: 'Pim de Witte',
-          authorUrl: 'http://pimdewitte.com',
-          imgSrc: 'pdwitte.jpeg'
-        })
-        +overview-list__article({
-          url: 'https://medium.com/@pim_dewitte/fighting-ebola-building-an-app-for-ebola-with-msf-google-3e8207ae5fe7',
-          title: 'Fighting Ebola: Building an app with MSF & Google',
-          author: 'Pim de Witte',
-          authorUrl: 'http://pimdewitte.com',
-          imgSrc: 'pdwitte.jpeg'
-        })
-
-      //a(href="#").cta Read all our articles on Medium
-
-  section.section.accent
     .container
 
       .column.half.clear-l
         +testimonial({
           content: "I can't say enough about their talent, customer service, and commitment to excellence.",
-          imgSrc: "pdwitte.jpeg",
-          name: "Ganesh Sinclair",
-          org: "Google",
-          profession: "Product Manager",
+          imgSrc: "derekallen-80.jpg",
+          name: "Derek Allen",
+          org: "C2 Miami",
+          profession: "Lead Pastor",
           orgUrl: "http://c2church.org"
         })
 
       .column.half.clear-r
         +testimonial({
-          content: "I can't say enough about their talent, customer service, and commitment to excellence.",
-          imgSrc: "pdwitte.jpeg",
-          name: "Ivan Gayton",
-          org: "MSF",
-          profession: "Head of Mission",
+          content: "Through their recent partnership with Google to create an Ebola-proof tablet, it is evident that next-generation companies like Whitespell not only have the ability, but also the flexibility to develop solutions for some of the world’s most pressing issues.",
+          imgSrc: "lyndibowman-80.jpg",
+          name: "Lyndi Bowman",
+          org: "The Beacon Council",
+          profession: "Director of Economic Development",
           orgUrl: "http://c2church.org"
         })
 
-  //- section.section
-  //-   .container
-  //-     h3#contact Contact
-  //-     h4.h5.alt We're not afraid of your thoughts
+  section.section.accent.centered
+    .container
+      
+      ul.inline.media-list
+        +media-list__item('http://www.bbc.com/news/health-31970731', 'BBC News', 'bbc.png')
+        +media-list__item('http://magazine.good.is/articles/googles-ebola-proof-tablets', 'GOOD News', 'good.png')
+        +media-list__item('http://www.engadget.com/2015/03/20/google-ebola-proof-tablet/', 'Engadget News', 'engadget.png')
+        +media-list__item('http://www.cityam.com/212100/how-google-ended-creating-ebola-proof-tablet', 'City A.M.', 'city-am.png')
+        +media-list__item('http://www.theverge.com/2015/3/20/8267259/google-tablet-ebola-chlorine', 'The Verge News', 'theverge.png')
+        +media-list__item('http://www.telegraph.co.uk/news/worldnews/ebola/11485946/Ebola-proof-tablet-designed-by-Google-rolled-out-in-Sierra-Leone-disease-centre.html', 'The Telegraph News', 'thetelegraph.png')
+        +media-list__item('http://www.wired.com/2015/03/google-builds-new-tablet-fight-ebola/', 'Wired', 'wired.png')
+        +media-list__item('https://fd.nl/economie-politiek/1097718/artsen-zonder-grenzen-vroeg-me-na-te-denken-over-bestrijding-ebola', 'Financieel Dagblad', 'fd.png')
 
-  //-     article.column.half.clear-l
-  //-       p
-  //-         | Everything you see around you was initially just an idea.
-  //-         | We're open to hear your thoughts and see how we can help.
-  //-       a(href="tel:+17862019489" title="Call us").no-border
-  //-         h6.alt.inline.no-clear +1 (786) 201 9489
-  //-       a(href="mailto:info@whitespell.com" title="Email us").no-border
-  //-         h6.alt.inline.no-clear info@whitespell.com
 
-  //-     article.column.half.clear-r
-  //-       +social-list
-
-  //- section.section
-  //-     .container
-  //-       h4 Office Address
-  //-       article.column.one-third.clear-l
-  //-         h6.alt United States
-  //-         ul.no-bullets
-  //-           li Whitespell LLC
-  //-           li 990 Biscayne Blvd. Office 503
-  //-           li Miami, FL 33132
-  //-           li +1 (305) 929-8688
-  //-       article.column.two-third.clear-r
-  //-         iframe.no-clear(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3592.618218595252!2d-80.18977800000003!3d25.783171000000017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b6a0faa6d11f%3A0x550785ebdd7e340f!2sMiamiShared!5e0!3m2!1snl!2snl!4v1419087308198", width="100%", height="250", frameborder="0", style="border:0")
+  section.section.centered
+    article.column.half.clear-l
+      .button-set
+        a(href="/contact.html").btn Get in touch
+        span or
+        a(href="/about.html").btn.alt Read all about Whitespell
