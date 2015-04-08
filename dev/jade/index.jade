@@ -2,7 +2,7 @@ extends ./inc/template
 
 block pageVars
   - var pageTitle = ""
-  - var pageDescription = "Whitespell"
+  - var pageDescription = "We fund, build, and support impactful and powerful technology that empowers people just like you."
 
 block pageContent
 
@@ -14,7 +14,7 @@ block pageContent
         p.
           We fund, build, and support impactful and powerful technology that empowers people just like you.
           Do you have ideas, opportunities, or wish to join our team?
-        a.cta(href="/contact.html") Get in touch with us
+        a.cta(href="/contact") Get in touch with us
 
       article.column.half.clear-r.character-wrapper
         .character
@@ -76,7 +76,7 @@ block pageContent
 
   section.section.accent.centered
     .container
-      
+
       ul.inline.media-list
         +media-list__item('http://www.bbc.com/news/health-31970731', 'BBC News', 'bbc.png')
         +media-list__item('http://magazine.good.is/articles/googles-ebola-proof-tablets', 'GOOD News', 'good.png')
@@ -91,6 +91,6 @@ block pageContent
   section.section.centered
     article.column.half.clear-l
       .button-set
-        a(href="/contact.html").btn Get in touch
+        a(href="/contact").btn Get in touch
         span or
-        a(href="/about.html").btn.alt Read all about Whitespell
+        a(href="/about").btn.alt Read all about Whitespell
