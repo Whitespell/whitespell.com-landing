@@ -74,11 +74,8 @@
 	// 	margin-bottom: 0;
 	// }
 
-	&.page-title, &.accent, &.accent-alt, &.fifty article:nth-child(1),&.fifty article:last-child {
-		padding-top: $margin-xl;
-
-		@include reset-text-color();
-
+	&.page-title {
+		padding-bottom: 0;
 		.container:after {
 			content: '';
 			overflow: hidden;
@@ -86,6 +83,13 @@
 			width: 100%;
 			float: left;
 		}
+	}
+
+	&.page-title, &.accent, &.accent-alt, &.fifty article:nth-child(1),&.fifty article:last-child {
+		padding-top: $margin-xl;
+		padding-bottom: $margin-xl;
+
+		@include reset-text-color();
 
 		a {
 			@include border(bottom, $grey);

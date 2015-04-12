@@ -5,10 +5,10 @@
 	.photo {
 		width: 120px;
 		height: 120px;
-		
+
 		border-radius: 100%;
 		overflow: hidden;
-		
+
 		//@include border($width: 1px, $color: $accent);
 		float: left;
 
@@ -26,4 +26,8 @@
 
 .photo-block__title {
 	margin-bottom: $margin-s;
+}
+
+.column:last-child .photo-block {
+	margin-bottom: 0;
 }
