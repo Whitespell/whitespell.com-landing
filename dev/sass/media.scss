@@ -248,18 +248,26 @@
 
 	}
 
+	.character {
+		width: 70%;
+		margin: 0 auto;
+
+		img {
+			margin-bottom: 0;
+		}
+	}
+
 	//HOME
-	.home-intro {
+	.section.home-intro {
+		padding-top: $margin-l;
+
+		&:before {
+			opacity: .8;
+			background-color: $accent-alt !important;
+		}
+
 		.character-wrapper {
 			margin-bottom: -$margin-s;
-			.character {
-				width: 70%;
-				margin: 0 auto;
-
-				img {
-					margin-bottom: 0;
-				}
-			}
 		}
 
 		.content {

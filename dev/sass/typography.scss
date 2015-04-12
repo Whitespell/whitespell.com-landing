@@ -246,10 +246,12 @@ ul {
 	}
 
 	&.media-list {
+		overflow: hidden;
 		margin: 0;
 		img {
 			margin-bottom: 0;
 			max-height: 25px;
+			max-width: 100%;
 		}
 	}
 

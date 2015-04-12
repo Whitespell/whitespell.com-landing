@@ -11,25 +11,6 @@
 	-o-background-size: cover;
 	background-size: cover;
 
-	&.bg-img {
-		&:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			background-color: $base-color;
-			opacity: .5;
-		}
-		&.accent:before {
-			background-color: $base-color;
-		}
-		&.accent-alt:before {
-			background-color: $accent-alt;
-		}
-	}
-
 	.illustration {
 		position: absolute;
 		font-size: 15em;
