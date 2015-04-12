@@ -68,7 +68,7 @@
 @include media($max-width: 768px){
 
 	.xs-push-top {
-		margin-top: $margin-m;
+		padding-top: $margin-l;
 	}
 
 	.xs-no-clear {
@@ -141,15 +141,17 @@
 		}
 
 		&.page-title, &.accent, &.accent-alt, &.fifty article:nth-child(1),&.fifty article:last-child {
-			padding-top: $margin-l;
-
-			.container:after {
-				height: $margin-l;
-			}
+			padding-top: $margin-xl-mobile;
+			padding-bottom: $margin-xl-mobile;
 		}
 
 		&.page-title {
 			padding-top: $margin-l;
+			padding-bottom: 0;
+
+			.container:after {
+				height: $margin-l;
+			}
 
 			.illustration {
 				font-size: 80px;
@@ -232,18 +234,15 @@
 			font-size: $size-s;
 			overflow: hidden;
 			margin-right: $margin-m;
+			float: none;
 
 			a:last-child li {
 				margin-bottom: 0;
 			}
 
-			li {
-				display: block;
-				margin-bottom: $margin-s;
-			}
-
-			&:last-child {
+			&.right {
 				float: none;
+				padding-top: $margin-s;
 			}
 		}
 
@@ -302,9 +301,5 @@
 		.content {
 			padding: 0;
 		}
-	}
-
-	ul.media-list {
-		margin-top: $margin-m;
 	}
 }

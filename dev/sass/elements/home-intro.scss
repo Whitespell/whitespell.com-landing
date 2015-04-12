@@ -1,10 +1,8 @@
-.header-push {
-	padding-top: $margin-l;
-}
+.section.home-intro {
+	height: 100%;
 
-.home-intro {
-	margin-bottom: $margin-l;
-	//padding-top: $margin-l;
+	padding-top: $margin-l*3;
+	padding-bottom: $margin-xl*3;
 
 	.content {
 		margin-top: $margin-xl;

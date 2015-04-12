@@ -6,7 +6,7 @@ block pageVars
 
 block pageContent
 
-  section.section.header-push.no-clear.accent(style="background-image: url('assets/img/doctor-buendia-app-2.jpg');")
+  section.section.home-intro.accent.bg-img(style="background-image: url('assets/img/doctor-buendia-app-2.jpg');")
     .container
       h3 Featured Project
       h4.h5 Project Buendia
@@ -15,34 +15,23 @@ block pageContent
           Whitespell founded a project to improve efficiency in Ebola treatment centers. The project has been an amazing experience for us.
           Thanks to the entire team the solution is now deployed in West Africa and helping doctors treat patients in Ebola treatment centers.
 
-        a(href="http://www.linkedin.com/pulse/fighting-ebola-building-app-msf-google-pim-de-witte" alt="Article: Fighting Ebola: Building an app with MSF & Google" target="_blank") More about project Buendia
+        .button-set.small
+          a(href="http://www.linkedin.com/pulse/fighting-ebola-building-app-msf-google-pim-de-witte" alt="Article: Fighting Ebola: Building an app with MSF & Google" target="_blank").btn Keep Reading
+          span or
+          a(href="/contact").btn.alt Get in touch
 
       article.column.half.clear-r
-        ul.no-bullets.no-clear.xs-push-top.media-list
+        ul.no-bullets.no-clear.xs-push-top.media-list(style="float: left; margin-right: 40px;")
           +media-list__item('http://www.bbc.com/news/health-31970731', 'BBC News', 'bbc.png')
-          +media-list__item('http://www.theverge.com/2015/3/20/8267259/google-tablet-ebola-chlorine', 'The Verge News', 'theverge.png')
-          +media-list__item('http://www.cityam.com/212100/how-google-ended-creating-ebola-proof-tablet', 'City A.M.', 'city-am.png')
           +media-list__item('http://magazine.good.is/articles/googles-ebola-proof-tablets', 'GOOD News', 'good.png')
+          +media-list__item('http://www.engadget.com/2015/03/20/google-ebola-proof-tablet/', 'Engadget News', 'engadget.png')
+          +media-list__item('http://www.cityam.com/212100/how-google-ended-creating-ebola-proof-tablet', 'City A.M.', 'city-am.png')
 
-  section.section.accent.centered
-    .container
-
-      ul.inline.media-list
-        +media-list__item('http://www.bbc.com/news/health-31970731', 'BBC News', 'bbc.png')
-        +media-list__item('http://magazine.good.is/articles/googles-ebola-proof-tablets', 'GOOD News', 'good.png')
-        +media-list__item('http://www.engadget.com/2015/03/20/google-ebola-proof-tablet/', 'Engadget News', 'engadget.png')
-        +media-list__item('http://www.cityam.com/212100/how-google-ended-creating-ebola-proof-tablet', 'City A.M.', 'city-am.png')
-        +media-list__item('http://www.theverge.com/2015/3/20/8267259/google-tablet-ebola-chlorine', 'The Verge News', 'theverge.png')
-        +media-list__item('http://www.telegraph.co.uk/news/worldnews/ebola/11485946/Ebola-proof-tablet-designed-by-Google-rolled-out-in-Sierra-Leone-disease-centre.html', 'The Telegraph News', 'thetelegraph.png')
-        +media-list__item('http://www.wired.com/2015/03/google-builds-new-tablet-fight-ebola/', 'Wired', 'wired.png')
-        +media-list__item('https://fd.nl/economie-politiek/1097718/artsen-zonder-grenzen-vroeg-me-na-te-denken-over-bestrijding-ebola', 'Financieel Dagblad', 'fd.png')
-
-  section.section.centered
-    article.column.half.clear-l
-      .button-set
-        a(href="/contact").btn Get in touch
-        span or
-        a(href="/about").btn.alt About Whitespell
+        ul.no-bullets.no-clear.xs-push-top.media-list
+          +media-list__item('http://www.theverge.com/2015/3/20/8267259/google-tablet-ebola-chlorine', 'The Verge News', 'theverge.png')
+          +media-list__item('http://www.telegraph.co.uk/news/worldnews/ebola/11485946/Ebola-proof-tablet-designed-by-Google-rolled-out-in-Sierra-Leone-disease-centre.html', 'The Telegraph News', 'thetelegraph.png')
+          +media-list__item('http://www.wired.com/2015/03/google-builds-new-tablet-fight-ebola/', 'Wired', 'wired.png')
+          +media-list__item('https://fd.nl/economie-politiek/1097718/artsen-zonder-grenzen-vroeg-me-na-te-denken-over-bestrijding-ebola', 'Financieel Dagblad', 'fd.png')
 
   section.section
     .container
@@ -83,6 +72,6 @@ block pageContent
   section.section.centered
     article.column.half.clear-l
       .button-set
-        a(href="/contact").btn Get in touch
-        span or
         a(href="/about").btn.alt About Whitespell
+        span or
+        a(href="/contact").btn Get in touch
