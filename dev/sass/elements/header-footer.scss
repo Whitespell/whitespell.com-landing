@@ -95,6 +95,24 @@ footer#footer {
 	padding-bottom: $margin-m;
 	padding-top: $margin-m;
 	@include border(top);
-	color: $grey-dark;
-	text-align: center;
+
+	a {
+		color: $grey-dark;
+		border: none;
+
+		&:hover {
+			color: $base-color;
+		}
+	}
+
+	ul {
+		display: block;
+		margin: 0;
+		float: left;
+
+		&.right {
+			float: right;
+			margin-bottom: 0;
+		}
+	}
 }
