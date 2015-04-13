@@ -5,16 +5,9 @@ footer#footer
         li Made with &#9829; in Miami. &copy; Whitespell
 
     ul.inline.right
-      a(href='./')
-        li Home
-      a(href='/about.html')
-        li About
-      a(href='/news.html')
-        li News
-      a(href='/careers.html')
-        li Careers
-      a(href='/contact.html')
-        li Contact
+      each name, href in pagesInfo
+          a(href="/#{href}")
+            li= name
 
 script(src='/js/app.js')
 </body>
