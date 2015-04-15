@@ -1,98 +1,105 @@
 extends ./inc/template
 
 block pageVars
-  - var pageTitle = "About"
-  - var pageDescription = "We fund, build, and support impactful and powerful technology that empowers people just like you. Ever thought technology could truly change the world? At Whitespell we do."
+    - var pageTitle = "About"
+    - var pageDescription = "We fund, build, and support impactful and powerful technology that empowers people just like you. Ever thought technology could truly change the world? At Whitespell we do."
 
 block pageContent
 
-  section.section.page-title
-    .container
-      h2 About
-      h3.h4 Impactful and powerful technology
+    section.section.page-title
+        .container
+            h2 About
+            h3.h4 Impactful and powerful technology
 
-      article.column.half.clear-l
-        p.
-          We fund, build, and support impactful and powerful technology that empowers people just like you.
-      .illustration
-        span.ss-icon.ss-standard cloud
+            article.column.half.clear-l
+                p.
+                  We fund, build, and support impactful and powerful technology that empowers people just like you.
+            .illustration
+                span.ss-icon.ss-standard cloud
 
-  section.section
-    .container
+    section.section
+        .container
 
-      article.column.half.clear-l
+            article.column.half.clear-l
 
-        h3 What we do
-        h4.h5.alt Fund, build, and support technology
+                h3 What we do
+                h4.h5.alt Fund, build, and support technology
 
-        p.
-          Ever thought technology could truly change the world? At Whitespell we do. We know that the boundaries of technology are limitless, and innovation is just waiting to happen. We are a team of entrepreneurs who truly want to make a difference through our careers.
-        p.
-          Whitespell is a business that builds products with true socical impact. We're a group of experienced tech leaders who are ready to take action on the world's most challenging problems.
+                p.
+                  Ever thought technology could truly change the world? At Whitespell we do. We know that the boundaries of technology are limitless, and innovation is just waiting to happen. We are a team of entrepreneurs who truly want to make a difference through our careers.
+                p.
+                  Whitespell is a business that builds products with true socical impact. We're a group of experienced tech leaders who are ready to take action on the world's most challenging problems.
 
-      article.column.half.clear-r
-        .character.smaller
-          img(src="assets/img/character.png")
+            article.column.half.clear-r
+                .character.smaller
+                    img(src="assets/img/character.png")
 
-  section.section
-    .container
+    section.section
+        .container
 
-      h3 The Team
-      h4.h5.alt Meet the team
+            h3 The Team
+            h4.h5.alt Meet the team
 
-      section.column
-        article.column.half.clear-l
-          +photo-block({
-            imgSrc: 'pimdewitte-320.jpg',
-            name: 'Pim de Witte',
-            title: 'Founder',
-            description: 'Pim is the founder and current CEO of Whitespell. Pim founded a gaming company at the age of 14, and left that company in 2015 to start Whitespell after working at Doctors without Borders and Google to fight Ebola. He is most passionate about filling the gap of technology in the humanitarian field.'
-          })
-        article.column.half.clear-r
-          +photo-block({
-            imgSrc: 'koenvendrik-320.jpeg',
-            name: 'Koen Vendrik',
-            title: 'Co-Founder',
-            description: 'Koen is an avid web developer with an eye for detail. His excellent design skills have helped him build beautiful products, just like he is doing at Whitespell. Koen is also not afraid to get out of his comfort zone to write some python or java.'
-          })
+            section.column
+                article.column.half.clear-l
+                    +photo-block({
+                    imgSrc: 'pimdewitte-320.jpg',
+                    name: 'Pim de Witte',
+                    title: 'Founder, Wizard of Tech',
+                    description: 'Pim is the founder and current CEO of Whitespell. Pim founded a gaming company at the age of 14, and left that company in 2015 to start Whitespell after working at Doctors without Borders and Google to fight Ebola. He is most passionate about filling the gap of technology in the humanitarian field.'
+                    })
+                article.column.half.clear-r
+                    +photo-block({
+                    imgSrc: 'koenvendrik-320.jpeg',
+                    name: 'Koen Vendrik',
+                    title: 'Co-Founder, Wizard of Design',
+                    description: 'Koen is an avid web developer with an eye for detail. His excellent design skills have helped him build beautiful products, just like he is doing at Whitespell. Koen is also not afraid to get out of his comfort zone to write some python or java.'
+                    })
 
-      section.column
-        article.column.half.clear-l
-          +photo-block({
-            imgSrc: 'joshmorgan-320.jpg',
-            name: 'Josh Morgan',
-            title: 'Co-Founder, CCO',
-            description: 'Josh is a Miami native, a true seeker of the heart and inspiring chief commercial officer. He talks to the customers, makes sure they are happy, and builds strategies for products that the tech team builds.'
-          })
-        article.column.half.clear-r
-          +photo-block({
-            imgSrc: 'davecopps-320.jpg',
-            name: 'Dave Copps',
-            title: 'Board of Advisors, Entrepreneurship',
-            description: 'Dave is a brilliant entrepreneur, he is thoughtful, insightful, smart, and has years of experience under his belt. Dave is on the board and advises us on strategical entrepreneurial moves.'
-          })
+            section.column
+                article.column.half.clear-l
+                    +photo-block({
+                    imgSrc: 'joshmorgan-320.jpg',
+                    name: 'Josh Morgan',
+                    title: 'Co-Founder, Wizard of Commercials',
+                    description: 'Josh is a Miami native, a true seeker of the heart and inspiring chief commercial officer. He talks to the customers, makes sure they are happy, and builds strategies for products that the tech team builds.'
+                    })
+                article.column.half.clear-r
+                    +photo-block({
+                    imgSrc: 'davecopps-320.jpg',
+                    name: 'Dave Copps',
+                    title: 'Board of Advisors, Entrepreneurship',
+                    description: 'Dave is a brilliant entrepreneur, he is thoughtful, insightful, smart, and has years of experience under his belt. Dave is on the board and advises us on strategical entrepreneurial moves.'
+                    })
 
-      section.column
-        article.column.half.clear-l
-          +photo-block({
-            imgSrc: 'richardmurray-320.jpg',
-            name: 'Richard Murray',
-            title: 'Board of Advisors, Customers',
-            description: 'Richard is a seasoned executive with extensive experience in software and telecommunications sectors. Richard\'s teams have won numerous awards by relentlessly focussing on company culture and putting the customer at the heart of every decision. Richard advises us on organisational values and commercial strategy.'
-          })
-        article.column.half.clear-r
-          +photo-block({
-            imgSrc: 'markvanderlinden-320.jpg',
-            name: 'Mark van der Linden',
-            title: 'Board of Advisors, Finance',
-            description: 'Mark is an experienced lawyer and tax strategist, he ensures that our financial flow is optimal and advises us on legal, finance, and tax.'
-          })
+            section.column
+                article.column.half.clear-l
+                    +photo-block({
+                    imgSrc: 'richardmurray-320.jpg',
+                    name: 'Richard Murray',
+                    title: 'Board of Advisors, Customers',
+                    description: 'Richard is a seasoned executive with extensive experience in software and telecommunications sectors. Richard\'s teams have won numerous awards by relentlessly focussing on company culture and putting the customer at the heart of every decision. Richard advises us on organisational values and commercial strategy.'
+                    })
+                article.column.half.clear-r
+                    +photo-block({
+                    imgSrc: 'markvanderlinden-320.jpg',
+                    name: 'Mark van der Linden',
+                    title: 'Board of Advisors, Finance',
+                    description: 'Mark is an experienced lawyer and tax strategist, he ensures that our financial flow is optimal and advises us on legal, finance, and tax.'
+                    })
 
-      section.column
-        article.column.half.clear-l
-          +photo-block({
-            imgSrc: 'ivangayton-320.jpg',
-            name: 'Ivan Gayton',
-            title: 'Board of Advisors, Impact',
-            description: 'Ivan is our advisor in social impact. He was previously the head of missions at Doctors without Borders. Ivan has been on MSF field trips numerous times and is a true hero who has saved many lives, even though he would never say so himself.'
-          })
+            section.column
+                article.column.half.clear-l
+                    +photo-block({
+                    imgSrc: 'ivangayton-320.jpg',
+                    name: 'Ivan Gayton',
+                    title: 'Board of Advisors, Impact',
+                    description: 'Ivan is our advisor in social impact. He was previously the head of missions at Doctors without Borders. Ivan has been on MSF field trips numerous times and is a true hero who has saved many lives, even though he would never say so himself.'
+                    })
+                article.column.half.clear-l
+                    +photo-block({
+                    imgSrc: 'you-320.jpg',
+                    name: 'You?',
+                    title: 'New Team Member',
+                    description: 'Whitespell is about building technology that impacts many lives. We are currently hiring, and if you think that you would be a good fit in our team, check out our careers page.'
+                })
