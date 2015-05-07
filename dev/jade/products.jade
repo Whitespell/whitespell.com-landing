@@ -1,0 +1,25 @@
+extends ./inc/template
+
+block pageVars
+  - var pageTitle = "Products"
+  - var pageDescription = "Get in touch, we're not afraid of your thoughts."
+
+block pageContent
+  section.section.page-title
+    .container
+      h2 Project Buendia
+      h3.h4 Improving Efficiency in Ebola Treatment Centers
+      article.column.half.clear-l
+          .button-set
+              a(href="http://projectbuendia.org").btn Check Out Buendia
+      .container
+      h2 Peak
+      h3.h4 Putting the world's peak performers at your fingertips
+      article.column.half.clear-l
+          .button-set
+              a(href="/peak").btn Check Out Peak
+      .illustration
+          span.ss-icon.ss-standard cloud
+
+
+
