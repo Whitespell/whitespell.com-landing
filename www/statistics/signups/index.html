@@ -12,7 +12,7 @@
         function drawChart() {
 
             $.ajax({
-                url: "http://peakapi.whitespell.com:9001/statistics/signups/",
+                url: "https://peakapi.whitespell.com/statistics/signups/",
                 context: document.body
             }).done(function(result) {
 
@@ -36,7 +36,7 @@
                 console.log(result);
                 var data = google.visualization.arrayToDataTable(totalDays);
                 var options = {
-                    title: 'Sign Ups By Day',
+                    title: 'Sign Ups By Day (UTC)',
                     hAxis: {title: 'Day',  titleTextStyle: {color: '#333'}},
                     vAxis: {minValue: 0}
                 };
