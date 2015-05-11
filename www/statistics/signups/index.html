@@ -11,13 +11,15 @@
         google.setOnLoadCallback(drawChart);
         function drawChart() {
 
+            var totalSignUps = 0;
+
             $.ajax({
                 url: "https://peakapi.whitespell.com/statistics/signups/",
                 context: document.body
             }).done(function(result) {
 
                 var totalDays = [];
-                var totalSignUps = 0;
+
 
                 totalDays.push(["Day", "Sign Ups"]);
 
@@ -52,7 +54,7 @@
     </script>
 </head>
 <body>
-<span id="totalSignUps">0</span> Total Sign Ups
+<p><span id="totalSignUps">0</span> Total Sign Ups</p>
 <div id="chart_div" style="width: 900px; height: 500px;"></div>
 </body>
 </html>
