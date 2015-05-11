@@ -17,10 +17,12 @@
             }).done(function(result) {
 
                 var totalDays = [];
+                totalSignUps = 0;
 
                 totalDays.push(["Day", "Sign Ups"]);
 
                 for(var entry in result) {
+                    totalSignUps += result[entry].data;
                     var pushToTotalDays = new Array(2);
                     pushToTotalDays[0] = result[entry].day;
                     pushToTotalDays[1] = result[entry].data;
@@ -28,9 +30,6 @@
                 }
 
                 console.log(totalDays);
-
-
-
 
 
                 console.log(result);
@@ -45,12 +44,15 @@
                 chart.draw(data, options);
             });
 
+            document.getElementByid("totalSignUps").innerHTML = totalSignUps;
+
 
 
         }
     </script>
 </head>
 <body>
+<span id="totalSignUps">0</span> Total Sign Ups
 <div id="chart_div" style="width: 900px; height: 500px;"></div>
 </body>
 </html>
