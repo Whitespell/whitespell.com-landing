@@ -5,3 +5,4 @@ dev/.sass-cache/
 dev/**/*.css
 .idea/
 .sass-cache/
+*.iml
