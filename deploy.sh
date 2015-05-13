@@ -1,4 +1,5 @@
 #!/bin/sh
+cat ~/.ssh/id_rsa.pub;
 echo "Starting deployment";
 ssh website-internal.whitespell.com "sudo mkdir -p /var/www/whitespell.com && sudo chmod -R 777 /var/www/whitespell.com";
 scp -r www/* website-internal.whitespell.com:/var/www/whitespell.com;
