@@ -1,9 +1,7 @@
 #!/bin/sh
-git add --all
-git commit -m $1
-git push origin master
-ssh 104.197.10.86 "cd /usr/share/whitespell.com && git pull --force origin master"
-ssh 104.197.10.86 "cp -R /usr/share/whitespell.com/www/* /var/www/whitespell.com/htdocs"
-
+ssh website-internal.whitespell.com "sudo mkdir -p /var/www/whitespell.com && sudo chmod -R 777 /var/www/whitespell.com";
+scp -r www/* website.whitespell.com:/var/www/whitespell.com;
+ssh website-internal.whitespell.com "sudo chmod -R 755 /var/www/whitespell.com";
+echo "Deployment Successful";
 
 
