@@ -1,15 +1,15 @@
 extends ./inc/template
 
 block pageVars
-    - var pageTitle = "About"
+    - var pageTitle = "Team"
     - var pageDescription = "We fund, build, and support impactful and powerful technology that empowers people just like you. Ever thought technology could truly change the world? At Whitespell we do."
 
 block pageContent
 
     section.section.page-title
         .container
-            h2 About
-            h3.h4 Impactful and powerful technology
+            h2 Team
+            h3.h4 Meet the team
 
             article.column.half.clear-l
                 p.
@@ -19,29 +19,6 @@ block pageContent
 
     section.section
         .container
-
-            article.column.half.clear-l
-
-                h3 What we do
-                h4.h5.alt Fund, build, and support technology
-
-                p.
-                  Ever think technology could truly change the world? At Whitespell we do. We know that the boundaries of
-                  technology are limitless, and innovation is just waiting to happen. We are a team of entrepreneurs who truly
-                  want to make a difference through our careers.
-                p.
-                  Whitespell is a business that builds products with true social impact. We're a group of experienced tech
-                  leaders who are ready to take action on the world's most challenging problems.
-
-            article.column.half.clear-r
-                .character.smaller
-                    img(src="assets/img/character.png")
-
-    section.section
-        .container
-
-            h3 The Team
-            h4.h5.alt Meet the team
 
             section.column
                 article.column.half.clear-l
@@ -106,9 +83,10 @@ block pageContent
                     title: 'Board of Advisors, Entrepreneurship',
                     description: 'Dave is a brilliant entrepreneur. He is thoughtful, insightful, smart, and has years of experience under his belt. Dave is on the board and advises us on strategical entrepreneurial moves.'
                     })
+
             section.section.centered
                 article.column.half.clear-l
                     .button-set
-                        a(href="/careers", target="_blank").btn Careers
+                        a(href="/careers").btn View career opportunities
                         span or
-                        a(href="/products").btn.alt Products
+                        a(href="/products").btn.alt Discover our products
