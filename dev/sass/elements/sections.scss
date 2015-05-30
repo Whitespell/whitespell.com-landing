@@ -11,6 +11,19 @@
 	-o-background-size: cover;
 	background-size: cover;
 
+	&.bg-img {
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: $base-color;
+			opacity: .5;
+		}
+	}
+
 	.illustration {
 		position: absolute;
 		font-size: 15em;
@@ -88,6 +101,11 @@
 	&.page-title, &.accent, &.accent-alt, &.fifty article:nth-child(1),&.fifty article:last-child {
 		padding-top: $margin-xl;
 		padding-bottom: $margin-xl;
+
+		&.bg-img {
+			padding-top: $margin-l*3;
+			padding-bottom: $margin-xl*2;
+		}
 
 		@include reset-text-color();
 

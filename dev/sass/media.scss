@@ -143,6 +143,22 @@
 		&.page-title, &.accent, &.accent-alt, &.fifty article:nth-child(1),&.fifty article:last-child {
 			padding-top: $margin-xl-mobile;
 			padding-bottom: $margin-xl-mobile;
+
+			&.bg-img {
+				padding-top: $margin-xl-mobile;
+				padding-bottom: $margin-xl-mobile;
+
+				&:before {
+					opacity: .8;
+				}
+
+				&.accent-alt:before {
+					background-color: $accent-alt !important;
+				}
+				&.accent:before {
+					background-color: $accent !important;
+				}
+			}
 		}
 
 		&.page-title {
@@ -259,11 +275,10 @@
 
 	//HOME
 	.section.home-intro {
-		padding-top: $margin-l;
+		padding-top: $margin-l !important;
 
-		&:before {
-			opacity: .8;
-			background-color: $accent-alt !important;
+		.peak-preview { 
+			margin-top: $margin-l;
 		}
 
 		.character-wrapper {
