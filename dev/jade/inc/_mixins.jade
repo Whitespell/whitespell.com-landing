@@ -54,5 +54,11 @@ mixin photo-block(options)
     .content
       h4.photo-block__title.alt #{options.name}
       h6 #{options.title}
+      if options.social
+        ul.social.inline
+          each val,key in options.social
+            li
+              a(href="#{val}")
+                span.ss-icon.ss-social-circle(class="#{key}") #{key}
       p.
         #{options.description}

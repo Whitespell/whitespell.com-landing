@@ -18,6 +18,10 @@ h1,h2,h3,h4,h5,h6 {
 	margin-bottom: $margin-m;
 	color: $accent;
 
+	&.spacing-s {
+		margin-bottom: $margin-s;
+	}
+
 	&.alt {
 		color: $accent-alt;
 	}
@@ -240,6 +244,9 @@ ul {
 			}
 			&.googleplus {
 				color: $googleplus;
+			}
+			&.linkedin {
+				color: $linkedin;
 			}
 		}
 

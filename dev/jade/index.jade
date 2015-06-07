@@ -6,32 +6,23 @@ block pageVars
 
 block pageContent
 
-  section.section.home-intro.accent(style="background-image: url('assets/img/doctor-fullscreen.jpg');")
+  section.section.home-intro.accent.bg-img(style="background-image: url('assets/img/peak-skater.jpg');")
     .container
-      h3 Featured Project
-      h4.h5 Project Buendia
+      h3.h5 Lastest Project
       article.column.half.clear-l
+        h1.peak-logo
+          img(src="/assets/img/peak-logo.svg")
         p.
-          Whitespell founded a project to improve efficiency in Ebola treatment centers. Thanks to Google, MSF, and the tech volunteers
-          the solution is now deployed in West Africa and helping doctors treat patients in Ebola treatment centers.
+          Peak brings high quality and personalized fitness content straight to your phone. Thanks to the world's best athletes,
+          we are able to empower anyone to train like a pro.
 
         .button-set.small
-          a(href="http://projectbuendia.org/", target="_blank").btn Visit Site
+          a(href="http://peakapp.me").btn Check out Peak
           span or
-          a(href="/careers").btn.alt Join us
-
+          a(href="/careers").btn.alt Join Whitespell
       article.column.half.clear-r
-        ul.no-bullets.no-clear.xs-push-top.media-list(style="float: left; margin-right: 40px;")
-          +media-list__item('http://www.bbc.com/news/health-31970731', 'BBC News', 'bbc.png')
-          +media-list__item('http://magazine.good.is/articles/googles-ebola-proof-tablets', 'GOOD News', 'good.png')
-          +media-list__item('http://www.engadget.com/2015/03/20/google-ebola-proof-tablet/', 'Engadget News', 'engadget.png')
-          +media-list__item('http://www.cityam.com/212100/how-google-ended-creating-ebola-proof-tablet', 'City A.M.', 'city-am.png')
-
-        ul.no-bullets.no-clear.xs-push-top.media-list
-          +media-list__item('http://www.theverge.com/2015/3/20/8267259/google-tablet-ebola-chlorine', 'The Verge News', 'theverge.png')
-          +media-list__item('http://www.telegraph.co.uk/news/worldnews/ebola/11485946/Ebola-proof-tablet-designed-by-Google-rolled-out-in-Sierra-Leone-disease-centre.html', 'The Telegraph News', 'thetelegraph.png')
-          +media-list__item('http://www.wired.com/2015/03/google-builds-new-tablet-fight-ebola/', 'Wired', 'wired.png')
-          +media-list__item('https://fd.nl/economie-politiek/1097718/artsen-zonder-grenzen-vroeg-me-na-te-denken-over-bestrijding-ebola', 'Financieel Dagblad', 'fd.png')
+        .peak-preview
+          img(src="/assets/img/peak-iphone-preview-black.png")
 
   section.section
     .container
@@ -56,22 +47,58 @@ block pageContent
           orgUrl: "http://c2church.org"
         })
 
-  section.section.accent-alt
+  section.section.accent-alt.bg-img(style="background-image: url('assets/img/doctor-fullscreen.jpg');")
     .container
+      h3.h5.spacing-s Featured Project
+      h3 Project Buendia
       article.column.half.clear-l
-        h3 Who are we?
-        h4.h5 A team of entrepreneurs who love a challenge
         p.
-          We fund, build, and support impactful and powerful technology that empowers people just like you. Our team has been
-          incredibly fortunate to work with developers all over the world on projects ranging from online games in The Netherlands to
-          health tech in Africa.
+          Whitespell founded a project to improve efficiency in Ebola treatment centers. Thanks to Google, MSF, and the tech volunteers
+          the solution is now deployed in West Africa and helping doctors treat patients in Ebola treatment centers.
 
-        a(href="/contact") Get in touch
+        .button-set.small
+          a(href="http://projectbuendia.org/", target="_blank").btn View Project Site
+          span or
+          a(href="/careers").btn.alt Join Whitespell
+
+      article.column.half.clear-r
+        ul.no-bullets.no-clear.xs-push-top.media-list(style="float: left; margin-right: 40px;")
+          +media-list__item('http://www.bbc.com/news/health-31970731', 'BBC News', 'bbc.png')
+          +media-list__item('http://magazine.good.is/articles/googles-ebola-proof-tablets', 'GOOD News', 'good.png')
+          +media-list__item('http://www.engadget.com/2015/03/20/google-ebola-proof-tablet/', 'Engadget News', 'engadget.png')
+          +media-list__item('http://www.cityam.com/212100/how-google-ended-creating-ebola-proof-tablet', 'City A.M.', 'city-am.png')
+
+        ul.no-bullets.no-clear.xs-push-top.media-list
+          +media-list__item('http://www.theverge.com/2015/3/20/8267259/google-tablet-ebola-chlorine', 'The Verge News', 'theverge.png')
+          +media-list__item('http://www.telegraph.co.uk/news/worldnews/ebola/11485946/Ebola-proof-tablet-designed-by-Google-rolled-out-in-Sierra-Leone-disease-centre.html', 'The Telegraph News', 'thetelegraph.png')
+          +media-list__item('http://www.wired.com/2015/03/google-builds-new-tablet-fight-ebola/', 'Wired', 'wired.png')
+          +media-list__item('https://fd.nl/economie-politiek/1097718/artsen-zonder-grenzen-vroeg-me-na-te-denken-over-bestrijding-ebola', 'Financieel Dagblad', 'fd.png')
+
+
+  section.section
+    .container
+
+        article.column.half.clear-l
+
+            h3 What we do
+            h4.h5.alt Fund, build, and support technology
+
+            p.
+              Ever think technology could truly change the world? At Whitespell we do. We know that the boundaries of
+              technology are limitless, and innovation is just waiting to happen. We are a team of entrepreneurs who truly
+              want to make a difference through our careers.
+            p.
+              Whitespell is a business that builds products with true social impact. We're a group of experienced tech
+              leaders who are ready to take action on the world's most challenging problems.
+
+        article.column.half.clear-r
+            .character.smaller
+                img(src="assets/img/character.png")
 
 
   section.section.centered
     article.column.half.clear-l
       .button-set
-        a(href="/about").btn.alt About Whitespell
+        a(href="/team").btn.alt Meet the team
         span or
         a(href="/contact").btn Get in touch
