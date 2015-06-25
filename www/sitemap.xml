@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://whitespell.com/</loc>
+  <lastmod>2015-06-25T08:55:35+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://whitespell.com/team</loc>
+  <lastmod>2015-06-25T08:55:35+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://whitespell.com/careers</loc>
+  <lastmod>2015-06-25T08:55:35+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://whitespell.com/contact</loc>
+  <lastmod>2015-06-25T08:55:35+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://whitespell.com/products</loc>
+  <lastmod>2015-06-07T04:19:05+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://whitespell.com/about</loc>
+  <lastmod>2015-06-07T04:19:05+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://whitespell.com/news</loc>
+  <lastmod>2015-06-07T04:19:05+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+</urlset>

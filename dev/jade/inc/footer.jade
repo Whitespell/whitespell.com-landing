@@ -10,5 +10,27 @@ footer#footer
             li= name
 
 script(src='/js/app.js')
+script(type="application/ld+json").
+    { 
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "https://whitespell.com",
+        "logo": "https://whitespell.com/img/whitespell-logo.png",
+        "sameAs": [
+            "https://facebook.com/wearewhitespell",
+            "https://twitter.com/_whitespell",
+            "https://github.com/whitespell",
+            "https://www.linkedin.com/company/whitespell"
+        ],
+        "contactPoint" : [
+            { 
+                "@type" : "ContactPoint",
+                "telephone" : "+1-7862019489",
+                "contactType" : "sales",
+                "contactOption" : "TollFree",
+                "areaServed" : "US"
+            }
+        ] 
+    }
 </body>
 </html>
