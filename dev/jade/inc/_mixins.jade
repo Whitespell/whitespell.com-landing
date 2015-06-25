@@ -22,31 +22,31 @@ mixin overview-list__article(options)
         img(src="/assets/img/portraits/#{options.imgSrc}" alt="#{options.author}")
       p
         | Posted by 
-        a(href="#{options.authorUrl}") #{options.author}
+        a(href="#{options.authorUrl}" title="#{options.author}") #{options.author}
 
 
 mixin media-list__item(url, name, imgSrc)
   li
-    a.no-border(href="#{url}" alt="Project Buendia on #{name}" target="_blank")
+    a.no-border(href="#{url}" title="Project Buendia on #{name}" target="_blank")
       img(src="assets/img/media/#{imgSrc}")
 
 
 mixin social-list(extraClass)
   ul.social(class="#{extraClass}")
     li
-      a(href="https://www.facebook.com/wearewhitespell")
+      a(href="https://www.facebook.com/wearewhitespell" title="Visit our Facebook")
         span.ss-icon.ss-social-circle.fb facebook
         | Facebook
     li
-      a(href="https://twitter.com/_whitespell")
+      a(href="https://twitter.com/_whitespell" title="Visit our Twitter")
         span.ss-icon.ss-social-circle.twitter twitter
         | Twitter
     li
-      a(href="https://github.com/whitespell")
+      a(href="https://github.com/whitespell" title="Visit our Github")
         span.ss-icon.ss-social-circle.github octocat
         | Github
     li
-      a(href="https://www.linkedin.com/company/whitespell")
+      a(href="https://www.linkedin.com/company/whitespell" title="Visit our Linkedin")
         span.ss-icon.ss-social-circle.linkedin linkedin
         | Linkedin
 
@@ -54,7 +54,7 @@ mixin social-list(extraClass)
 mixin photo-block(options)
   .photo-block
     .photo
-      img(src="/assets/img/portraits/#{options.imgSrc}")
+      img(src="/assets/img/portraits/#{options.imgSrc}" alt="#{options.name}")
     .content
       h4.photo-block__title.alt #{options.name}
       h6 #{options.title}
@@ -62,7 +62,7 @@ mixin photo-block(options)
         ul.social.inline
           each val,key in options.social
             li
-              a(href="#{val}")
+              a(href="#{val}" title="Visit #{key}")
                 span.ss-icon.ss-social-circle(class="#{key}") #{key}
       p.
         #{options.description}
