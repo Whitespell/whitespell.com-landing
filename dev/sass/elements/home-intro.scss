@@ -40,10 +40,8 @@
 		max-width: 300px;
 	}
 
-	&.character--robots, &.character--robots.smaller {
-		img {
-			max-width: 500px;
-		}
+	&.character--robots img{
+		max-width: 500px;
 	}
 
 	&.smaller img {
