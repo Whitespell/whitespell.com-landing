@@ -1,3 +1,22 @@
+//LARGER SCREENS
+@include media($min-width: 1920px){
+	
+	.section.home-intro {
+		max-height: 700px;
+		background-image: url(/assets/img/advanced-yoga-woman-2500x900.jpg);
+
+		&.bg-img {
+			padding-top: 164px;
+		}
+	}
+
+	.section.accent-alt.bg-img {
+		padding-top: 200px;
+		padding-bottom: 220px;
+	}
+
+}
+
 //ALL SMALLER DEVICES/SCREENS
 @include media($max-width: 1080px){
 
