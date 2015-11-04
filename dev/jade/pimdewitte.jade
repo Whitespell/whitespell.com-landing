@@ -1,0 +1,37 @@
+extends ./inc/template
+
+block pageVars
+    - var pageTitle = "Pim de Witte - Wizard of Tech"
+    - var pageDescription = "Pim is the founder and current CEO of Whitespell. Pim founded a gaming company at the age of 14, and left that company in 2015 to start Whitespell after working at Doctors without Borders and Google to fight Ebola. He is most passionate about filling the gap of technology in the humanitarian field."
+
+block pageContent
+
+    .container
+        section.section.push-top
+            article.column.two-third.clear-l
+
+                .photo-block
+                    .photo
+                        img(src="/assets/img/portraits/pimdewitte-320.jpg" alt="Pim de Witte")
+                    .content
+                        h1.h4.photo-block__title.alt Pim de Witte
+                        h2.h5 Founder, Wizard of Tech
+
+                        ul.social.inline
+                            li
+                                a(href="https://twitter.com/pimdewitte" title="Visit twitter")
+                                    span.ss-icon.ss-social-circle(class="twitter") twitter
+                            li
+                                a(href="https://www.linkedin.com/in/pimdw" title="Visit linkedin")
+                                    span.ss-icon.ss-social-circle(class="linkedin") linkedin
+                            li
+                                a(href="https://github.com/pwhitespell" title="Visit github")
+                                    span.ss-icon.ss-social-circle(class="github") github
+
+                        p.
+                            My passion is making a true impact through technology. I’m a skilled and creative technologist who makes ethical data-driven decisions. I have a deep understanding of both B2B and B2C businesses, especially tech companies. I’m a team player with a track record of credibility, success, and a healthy dose of failure.
+                        p.
+                            At 14 years old I started my first successful tech company. My technical skill set consists of front- and back-end software development, software & network analysis, and highly sensitive software & network architecture with a large understanding and proven track record of scalability, efficiency, security and performance.
+
+                        a(href="/team" title="See the entire team").btn See the entire team
+
