@@ -61,6 +61,45 @@
   <body>
 
     
+<section class="overlay" id="overlay">
+	<div class="container">
+		
+		<div class="v-align">
+			<div class="v-align__cell">
+
+				<a class="overlay__close" id="js-overlay-close">
+					<img src="img/close-round.svg" alt="">
+				</a>
+
+				<h1>View one of our examples</h1>
+
+				<ul class="list--inline">
+					<li>
+						<a href="http://apple.co/1QNUVFB">
+							<img src="img/apple-logo.svg" alt="">
+							in the App Store
+						</a>
+					</li>
+					<li>
+						<a href="http://bit.ly/1PrTgab">
+							<img src="img/android-logo.svg" alt="">
+							on Google Play
+						</a>
+					</li>
+					<li>
+						<a href="http://app.upfit.co">
+							<img src="img/earth.svg" alt="">
+							on the Web
+						</a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+
+	</div>
+</section>
+
 <div class="container">
 	
 	<div class="v-align">
@@ -96,11 +135,14 @@
 
 				<div>
 				<a href="mailto:arielle@whitespell.com?subject=Video Platform - I want to start monetizing properly!" class="btn btn--alt">
-					Start monetizing properly
+					Get started today!
 				</a>
 				</div>
 				<a href="video-platform-solution.pdf" class="btn">
 					Learn More
+				</a>
+				<a href="#overlay" class="btn" id="js-overlay-trigger">
+					View Examples
 				</a>
 			</section>
 
@@ -116,9 +158,21 @@
 </div>
 
     <script>
-        window.addEventListener('load', function(){
-            document.documentElement.className += ' js-page-loaded';
-        }, false);
+        document.documentElement.className += ' js-page-loaded';
+
+        (function(){
+            var triggerEl = document.getElementById('js-overlay-trigger'),
+                overlayEl = document.getElementById('overlay'),
+                overlayCloseEl = document.getElementById('js-overlay-close');
+
+            triggerEl.addEventListener('click', function(){
+                overlayEl.classList.add('overlay--visible');
+            }, false);
+
+            overlayCloseEl.addEventListener('click', function(){
+                overlayEl.classList.remove('overlay--visible');
+            }, false);
+        }());
     </script>
 
     <script>
